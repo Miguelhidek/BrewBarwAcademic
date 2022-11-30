@@ -84,7 +84,6 @@ nav{
 
 .image-background{
     width: 100%;
-    height: calc(60vh - 70px);
     background-image: url('./assets/medias/entrada.jpg');
     background-position: center;
     background-size: cover;
