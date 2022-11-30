@@ -1,0 +1,332 @@
+<!DOCTYPE Html>
+    <head>
+        <meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"/>
+		<title> Brew Barn Fortaleza </title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;700&family=Jua&family=Source+Code+Pro:wght@300;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li> <a> Início </a> </li>
+                        <li> <a onclick='scrollSections("#section-beers")'> Cerveja Artesanais</a> </li>
+                        <li> <a onclick='scrollSections("#section-events")'> Eventos</a> </li>
+                        <li> <a onclick='scrollSections("#section-space")'> Nosso Espaço</a> </li>
+                        <li> <a onclick='scrollSections("#section-menu")'> Cardápio</a> </li>
+                        <li> <a onclick='scrollSections("#section-gallery")'> Fotos</a> </li>
+                    </ul>
+                </div>
+                <div class="menu-opened" onclick="menuToggle()">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+            </nav>
+            <div class="image-background">
+                <div class="header-infor-container">
+                    <div class="header-infors">
+                        <h1>Bar e Restaurante</h1>
+                        <h3>Vem celebrar no celeiro mais animado da cidade</h3>
+                    </div>
+                    <img class="header-logo" src="./assets/medias/logo.png"/>
+                    <div class="header-infors">
+                        <h4>Terça a Domingo, das 11 as 23 horas</h4>
+                        <h4>Rua Tibúrcio Cavalcante, 1457 - Aldeota, Fortaleza-CE</h4>
+                    </div>
+                    <div class="social-midia">
+                        <a href="https://www.facebook.com/brewbarnfortal/" target="_blank">
+                            <img src="./assets/icons/icon-facebook.png" />
+                        </a>
+                        <a href="https://www.instagram.com/brewbarnfortaleza/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+                            <img src="./assets/icons/icon-instagram.png" />
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B558530854650&text=Ol%C3%A1+Brew+Barn%2C+gostaria+de+fazer+uma+reserva+&type=phone_number&app_absent=0" target="_blank">
+                            <img src="./assets/icons/icon-whatsapp.png" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div onclick="scrollZero()" class='scrollButton'>
+                <img src='./assets/icons/icon-left48.png'/>
+            </div>
+            <section class="section-background">
+                <div class="section-title"> Nossos Serviços</div>
+                <div class="section-subtitle"> Feito especialmente pra você</div>
+                <div class="section-content">
+                    <div class="services">
+                        <div class="service-item">
+                            <img src="./assets/icons/icons-fondue-48.png">
+                            <p>Gastronomia </br><span>Multicultural</span></p>
+                        </div>
+                        <div class="service-item">
+                            <img src="./assets/icons/icons-churrasqueira-48.png">
+                            <p>Churrasco da </br><span>Parrilla</span></p>
+                        </div>
+                        <div class="service-item">
+                            <img src="./assets/icons/icons-coquetel-48.png">
+                            <p>Drinks e Cervejas </br><span>Especiais</span></p>
+                        </div>
+                        <div class="service-item">
+                            <img src="./assets/icons/icons-microfone-48.png">
+                            <p>Música ao vivo </br><span>e Eventos</span></p>
+                        </div>
+                        <div class="service-item">
+                            <img src="./assets/icons/icons-refeição-48.png">
+                            <p>Almoço </br><span>Executivo</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id='section-beers' class="section-green-background">
+                <div class="section-content">
+                    <div class="beer-content">
+                        <div class="beer-infors">
+                            <div class="section-title"> Cervejas Artesanais </div>
+                            <div class="section-subtitle"> As melhores da região</div>
+                            <div class="beers">
+                                <div class="beer">
+                                    <div class="beer-item-image">
+                                        <img src="./assets/icons/icons-beer.png">
+                                    </div>
+                                    <div class="beer-item-description">
+                                        BADEN BADEN WITBIER
+                                        <span> [Uma descrição da bebida aqui] </span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="beer">
+                                    <div class="beer-item-image">
+                                        <img src="./assets/icons/icons-beer.png">
+                                    </div>
+                                    <div class="beer-item-description">
+                                        LAGUNITAS IPA
+                                        <span> [Uma descrição da bebida aqui] </span>
+                                    </div>
+                                </div>
+                                <div class="beer">
+                                    <div class="beer-item-image">
+                                        <img src="./assets/icons/icons-beer.png">
+                                    </div>
+                                    <div class="beer-item-description">
+                                        VERÃO 86
+                                        <span> [Uma descrição da bebida aqui] </span>
+                                    </div>
+                                </div>
+                                <div class="beer">
+                                    <div class="beer-item-image">
+                                        <img src="./assets/icons/icons-beer.png">
+                                    </div>
+                                    <div class="beer-item-description">
+                                        IPANCADA
+                                        <span> [Uma descrição da bebida aqui] </span>
+                                    </div>
+                                </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="beer-image">
+                            <img src="./assets/medias/2.jpg"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id='section-events' class="section-background">
+                <div class="section-title"> Próximos Eventos</div>
+                <div class="section-subtitle"> Fique por dentro e não perca nenhum</div>
+                <div class="section-content">
+                    <div class="events-container">
+                        <div id="events" class="events">
+                            <div class="event">
+                                <img src="./assets/medias/e4.jpg" />
+                                <div class="event-description">
+                                    <span class="event-artist">Choro de Varanda</span>
+                                    <span class="event-title">Sábado, overdose de choro e samba </span>
+                                    <span class="event-data"> 12 de Novembro - 13 h</span>
+                                </div>
+                            </div>
+                            <div class="event">
+                                <img src="./assets/medias/e3.jpg" />
+                                <div class="event-description">
+                                    <span class="event-artist">Edylane Oliveira e Som Brasileiro</span>
+                                    <span class="event-title">Sábado, overdose de choro e samba </span>
+                                    <span class="event-data"> 12 de Novembro - 16:30</span>
+                                </div>
+                            </div>
+                            <div class="event">
+                                <img src="./assets/medias/e2.jpg" />
+                                <div class="event-description">
+                                    <span class="event-artist">Grupo Academia</span>
+                                    <span class="event-title">Sábado, overdose de choro e samba </span>
+                                    <span class="event-data"> 12 de Novembro - 20 h</span>
+                                </div>
+                            </div>
+                            <div class="event">
+                                <img src="./assets/medias/e1.jpg" />
+                                <div class="event-description">
+                                    <span class="event-artist">Nega Lu</span>
+                                    <span class="event-title">Domingo, almoço com MPB </span>
+                                    <span class="event-data"> 13 de Novembro - 12:30</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id='section-space' class="section-green-background">
+                <div class="section-title"> Nosso espaço</div>
+                <div class="section-subtitle"> Tudo que você precisa</div>
+                <div class="section-content">
+                    <div class="space">
+                        <div class="space-main-image">
+                            <img id="main-image" class="main-image" src="./assets/medias/1.jpg"/>
+                        </div>
+                        <div class="miniature-bar">
+                            <div id="miniature-button-back" class="button hidden" onclick="goBack()">
+                                <img src="./assets/icons/icons-back.png" />
+                            </div>
+                            <div id="miniature-container" class="miniature-container">
+                                <div id="miniatures" class="miniatures">
+                                    <img id="0" class="miniature active" src="./assets/medias/1.jpg"/>
+                                    <img id="1" class="miniature" src="./assets/medias/2.jpg"/>
+                                    <img id="2" class="miniature" src="./assets/medias/3.jpg"/>
+                                    <img id="3" class="miniature" src="./assets/medias/4.jpg"/>
+                                    <img id="4" class="miniature" src="./assets/medias/5.jpg"/>
+                                    <img id="5" class="miniature" src="./assets/medias/1.jpg"/>
+                                    <img id="6" class="miniature" src="./assets/medias/1.jpg"/>
+                                    <img id="7" class="miniature" src="./assets/medias/1.jpg"/>
+                                    <img id="8" class="miniature" src="./assets/medias/2.jpg"/>
+                                    <img id="9" class="miniature" src="./assets/medias/3.jpg"/>
+                                    <img id="10" class="miniature" src="./assets/medias/4.jpg"/>
+                                    <img id="11" class="miniature" src="./assets/medias/5.jpg"/>
+                                    <img id="12" class="miniature" src="./assets/medias/1.jpg"/>
+                                    <img id="13" class="miniature" src="./assets/medias/1.jpg"/>
+                                </div>
+                            </div>
+                            <div id="miniature-button-next" class="button hidden"  onclick="goNext()">
+                                <img src="./assets/icons/icons-next.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id='section-menu' class="section-background">
+                <div class="section-content" style="margin-top: 0">
+                    <div class="menu-container">
+                        <div class="menu-qrcode">
+                            <a href="https://www.brewbarn.com.br/BrewBarn-Cardapio.pdf" target="_blank">
+                                <img src='https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fwww.brewbarn.com.br%2FBrewBarn-Cardapio.pdf&chs=180x180&choe=UTF-8&chld=L|2' alt='QR Code'>
+                            </a>
+                            <span> Clique ou Escaneie </span>
+                        </div>
+                        <div class="menu-apresentation">
+                            <div class="section-title"> Cardápio Digital </div>
+                            <div class="section-subtitle"> Assinado pelo os chefs</div>
+                            <div class="menu-chefes">
+                                <div class="chef">
+                                    <img src="./assets/medias/herschel-veras.jpg" />
+                                    <div class="chef-description">
+                                        <div class="chef-name">Daniel Sebbá</div>
+                                        <div class="chef-name-description">
+                                            Consultor gastronômico, pitmaster e juiz certificado pela Kansas City BBQ Society.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chef">
+                                    <img src="./assets/medias/herschel-veras.jpg" />
+                                    <div class="chef-description">
+                                        <div class="chef-name">Herschel Veras</div>
+                                        <div class="chef-name-description">
+                                            Premiado chef, combina o melhor da cozinha regional brasileira com técnicas vanguardistas de preparo.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id='section-gallery' class="section-green-background gallery">
+                <div class="section-title"> Galeria de Fotos</div>
+                <div class="section-subtitle"> Os melhores momentos</div>
+                <div class="section-content">
+                    <div class="photos-gallery">
+                        <div id="photos" class="photos">
+                            <img id="0" class="photo" src="./assets/medias/gallery/1.jpg"/>
+                            <img id="1" class="photo" src="./assets/medias/gallery/2.jpg"/>
+                            <img id="2" class="photo" src="./assets/medias/gallery/3.jpg"/>
+                            <img id="3" class="photo" src="./assets/medias/gallery/4.jpg"/>
+                            <img id="4" class="photo" src="./assets/medias/gallery/5.jpg"/>
+                            <img id="5" class="photo" src="./assets/medias/gallery/6.jpg"/>
+                            <img id="6" class="photo" src="./assets/medias/gallery/7.jpg"/>
+                            <img id="7" class="photo" src="./assets/medias/gallery/8.jpg"/>
+                            <img id="8" class="photo" src="./assets/medias/gallery/9.jpg"/>
+                            <img id="9" class="photo" src="./assets/medias/gallery/10.jpg"/>
+                        </div>
+                    </div>
+                    <div id="gallery-view" class="gallery-view">
+                        <div class="photo-container">
+                            <img class="button" src="./assets/icons/icons-close.png" onclick="galleryClose()">
+                            <div class="photo-view"> </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-background">
+                <div class="section-content">
+                    <div class="satisfaction-container">
+                        <div class="satisfaction-apresentation">
+                            <div class="section-title">Já nos visitou ?</div>
+                            <div class="section-subtitle">Conte pra nós a sua experiência</div>
+                            <span> Reserve um minuto para responder nossa pesquisa de satisfação e nos ajude a sempre trazer o melhor para você. </span>
+                        </div>
+                        <div class="satisfaction-qrcode">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScJHXz7bi9sr92W0_7IZUKa3GlZLzLr4AVgXBw6yYyY-2mdqA/viewform" target="_blank">
+                                <img src='https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLScJHXz7bi9sr92W0_7IZUKa3GlZLzLr4AVgXBw6yYyY-2mdqA%2Fviewform&chs=180x180&choe=UTF-8&chld=L|2' alt='QR Code'>
+                            </a>
+                            <span> Clique ou Escaneie </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="footer-body">
+                    <div class="footer-logo-container">
+                        <img class="footer-logo" src="./assets/medias/logo.png"/>
+                        <h2>Bar e Restaurante</h2>
+                        <h4> O melhor celeiro da cidade </h4>
+                    </div>
+                    <div class="footer-middle">
+                        <input type="hidden">
+                    </div>
+                    <div class="footer-infor-container">
+                        <h6>Rua Tibúrcio Cavalcante, 1457 </h6>
+                        <h6>Aldeota, Fortaleza-CE</h6>
+                        <h6>Telefone: (85) 3023-3338</h6>
+                        <h6>CNPJ 00.000.000/0000-00 </h6>
+                        <div class="footer-social-midia">
+                            <a href="https://www.facebook.com/brewbarnfortal/" target="_blank">
+                                <img class="icon-image" src="./assets/icons/icon-facebook.png" />
+                            </a>
+                            <a href="https://www.instagram.com/brewbarnfortaleza/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+                                <img class="icon-image" src="./assets/icons/icon-instagram.png" />
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=%2B558530854650&text=Ol%C3%A1+Brew+Barn%2C+gostaria+de+fazer+uma+reserva+&type=phone_number&app_absent=0" target="_blank">
+                                <img class="icon-image" src="./assets/icons/icon-whatsapp.png" />
+                            </a>
+                        </div>
+                        <h6> Copyright © 2022  Brew Barn</h6>
+                        <h6>Todos os Direitos Reservados</h6>
+                    </div>
+                </div>
+            </div> 
+        </footer>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</Html>
